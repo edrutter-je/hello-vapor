@@ -5,12 +5,18 @@ extension Droplet {
         get("campaigntimes") { req in
             var json = JSON()
             
-            try json.set("campaigns", [["name" : "valentines",
+            try json.set("campaigns", [["name" : "goatday",
+                                        "start": Date.with(year: 2018, month: 4, day: 19, hour: 17, minute: 0),
+                                        "end": Date.with(year: 2018, month: 4, day: 19, hour: 17, minute: 20),
+                                        "tagline": "🐐🐐🐐🐐🐐🐐🐐"],
+                                       ["name" : "valentines",
                                         "start": Date.with(year: 2018, month: 2, day: 14, hour: 0, minute: 0),
-                                        "end": Date.with(year: 2018, month: 2, day: 15, hour: 0, minute: 0)],
+                                        "end": Date.with(year: 2018, month: 2, day: 15, hour: 0, minute: 0),
+                                        "tagline": "🍕+🌭 = 😍"],
                                        ["name" : "christmas",
                                         "start": Date.with(year: 2018, month: 12, day: 20, hour: 0, minute: 0),
-                                        "end": Date.with(year: 2018, month: 12, day: 25, hour: 0, minute: 0)],
+                                        "end": Date.with(year: 2018, month: 12, day: 25, hour: 0, minute: 0),
+                                        "tagline": "Christmas dinner from KFC = 🎄 = 😍"],
                                        ["name" : "xfactor",
                                         "start": Date.with(year: 2018, month: 9, day: 20, hour: 0, minute: 0),
                                         "end": Date.with(year: 2018, month: 12, day: 3, hour: 0, minute: 0),
