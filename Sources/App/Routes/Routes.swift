@@ -1,22 +1,36 @@
 import Vapor
 
+import Foundation
+
 extension Droplet {
     func setupRoutes() throws {
         get("campaigntimes") { req in
             var json = JSON()
             
-            try json.set("campaigns", [["name" : "goatday",
-                                        "start": Date.with(year: 2018, month: 4, day: 19, hour: 17, minute: 0),
-                                        "end": Date.with(year: 2018, month: 4, day: 19, hour: 17, minute: 20),
+            try json.set("campaigns", [["name" : "goat_oclock",
+                                        "start": Date() + TimeInterval(5.0*60.0),
+                                        "end": Date() + TimeInterval(6.0*60.0),
                                         "tagline": "🐐🐐🐐🐐🐐🐐🐐"],
-                                       ["name" : "valentines",
+                                       ["name" : "midnight_feast",
+                                        "start": Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date()),
+                                        "end": Calendar.current.date(bySettingHour: 4, minute: 00, second: 0, of: Date()),
+                                        "tagline": "Had a few too many? Close one eye for faster ordering"],
+                                       ["name" : "breakfast",
+                                        "start": Calendar.current.date(bySettingHour: 4, minute: 0, second: 0, of: Date()),
+                                        "end": Calendar.current.date(bySettingHour: 11, minute: 30, second: 0, of: Date()),
+                                        "tagline": "Wake up and smell the bacon"],
+                                       ["name" : "dinner",
+                                        "start": Calendar.current.date(bySettingHour: 17, minute: 0, second: 0, of: Date()),
+                                        "end": Calendar.current.date(bySettingHour: 11, minute: 00, second: 0, of: Date()),
+                                        "tagline": "Avoid an argument over who's cooking, Just Eat"],
+                                       ["name" : "valentines_day",
                                         "start": Date.with(year: 2018, month: 2, day: 14, hour: 0, minute: 0),
                                         "end": Date.with(year: 2018, month: 2, day: 15, hour: 0, minute: 0),
                                         "tagline": "🍕+🌭 = 😍"],
                                        ["name" : "christmas",
                                         "start": Date.with(year: 2018, month: 12, day: 20, hour: 0, minute: 0),
                                         "end": Date.with(year: 2018, month: 12, day: 25, hour: 0, minute: 0),
-                                        "tagline": "Christmas dinner from KFC = 🎄 = 😍"],
+                                        "tagline": "Christmas dinner from KFC? 🎄"],
                                        ["name" : "xfactor",
                                         "start": Date.with(year: 2018, month: 9, day: 20, hour: 0, minute: 0),
                                         "end": Date.with(year: 2018, month: 12, day: 3, hour: 0, minute: 0),
