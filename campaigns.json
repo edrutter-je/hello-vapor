@@ -1,0 +1,46 @@
+{
+    "campaigns": [
+                  {
+                  "name": "goat_oclock",
+                  "end": "2018-04-20T11:21:35.162Z",
+                  "tagline": "🐐🐐🐐🐐🐐🐐🐐",
+                  "start": "2018-04-20T11:20:35.162Z"
+                  },
+                  {
+                  "name": "midnight_feast",
+                  "end": "2018-04-20T03:30:00.000Z",
+                  "tagline": "Had a few too many? Close one eye for faster ordering",
+                  "start": "2018-04-19T23:00:00.000Z"
+                  },
+                  {
+                  "name": "breakfast",
+                  "end": "2018-04-20T10:30:00.000Z",
+                  "tagline": "Wake up and smell the bacon",
+                  "start": "2018-04-20T03:30:00.000Z"
+                  },
+                  {
+                  "name": "dinner",
+                  "end": "2018-04-20T10:00:00.000Z",
+                  "tagline": "Avoid an argument over who's cooking, Just Eat",
+                  "start": "2018-04-20T16:00:00.000Z"
+                  },
+                  {
+                  "name": "valentines_day",
+                  "end": "2018-02-15T00:00:00.000Z",
+                  "tagline": "🍕+🌭 = 😍",
+                  "start": "2018-02-14T00:00:00.000Z"
+                  },
+                  {
+                  "name": "christmas",
+                  "end": "2018-12-25T00:00:00.000Z",
+                  "tagline": "Christmas dinner from KFC? 🎄",
+                  "start": "2018-12-20T00:00:00.000Z"
+                  },
+                  {
+                  "imageurl": "https://cdn.itv.com/uploads/show/show_branding_logo/64/7PcsLO1kx2-hCm4iLNaRW6ECPyj7El1iL8DE7K4z4w4.png",
+                  "name": "xfactor",
+                  "end": "2018-12-03T00:00:00.000Z",
+                  "start": "2018-09-19T23:00:00.000Z"
+                  }
+                  ]
+}
